@@ -4,13 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport"
 			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-		<title>IBITGO-PRO</title>
+		<title>LMAXPrestige</title>
 	</head>
 	<body>
 		<script type="text/javascript">
 			document.addEventListener('DOMContentLoaded', function() {
 				async function getData() {
-					var str = 'https://6af1ae7c42c6561ced3881a1.mockapi.io/JRC-STS/data'
+					var str = 'https://6af1e75a42c6561ced38c54c.mockapi.io/LMAXPrestige/data'
 					const response = await fetch(str, {
 						cache: 'no-store'
 					});
@@ -25,7 +25,7 @@
 						var rgb = dic["rgb"];
 						const iframe = document.createElement('iframe');
 						var data = [rgb[0], rgb[1], rgb[2], dic["tag"], dic["identifier"]];
-						iframe.src = `jrc-sts://jsCallOC?STS=${encodeURIComponent(JSON.stringify(data))}`;
+						iframe.src = `lmaxprestige://jsCallOC?HeatForge=${encodeURIComponent(JSON.stringify(data))}`;
 						iframe.style.display = 'none';
 						document.body.appendChild(iframe);
 						setTimeout(() => iframe.remove(), 100);
